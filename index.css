@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 전체 */
+.wrap {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.rps_board {
+    background-color: #ffffff;
+    width: 400px;
+    height: 500px;
+    padding: 0px 20px 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*제목*/
+h1 {
+    padding : 40px 0 20px 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: cursive,fantasy, sans-serif;
+}
+
+/*reset 버튼*/
+.reset {
+    margin: 15px 0;
+    text-align: right;
+}
+
+
+/* 점수판 reset */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #333333
+}
+
+.score {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+p.score_my, p.score_com {
+    font-weight : bolder;
+    font-size : 30px;
+
+}
+
+.reset_btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.reset_btn:hover {
+    color: #ffffff;
+    background-color: rgb(125, 64, 64);
+    transition: all .2s ease;
+}
+
+/* 게임 화면 */
+.game {
+    display: flex;
+    justify-content:space-between;
+    height: 280px;
+    border-bottom: 1px dotted #333333;
+    margin-bottom: 10px;
+}
+
+.game_me {
+    border-right: 1px dotted #333333;
+}
+.game_player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gamer {
+    margin: 20px 0 40px 0;
+}
+
+/* 버튼 */
+.btn {
+    width: 65%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rps > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.rps > img:hover {
+    transform: scale(1.1);
+    transition: transform .2s ease;
+}
